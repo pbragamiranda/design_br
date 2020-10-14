@@ -9,6 +9,8 @@ require("@rails/activestorage").start()
 require("channels")
 require("../../../vendor/assets/dist/js/dsgov")
 
+require leaflet.draw
+
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -25,12 +27,15 @@ require("../../../vendor/assets/dist/js/dsgov")
 
 // External imports
 import "bootstrap";
+import "leaflet";
 
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { navDropDown } from '../components/init_header';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  // navDropDown();
 });
